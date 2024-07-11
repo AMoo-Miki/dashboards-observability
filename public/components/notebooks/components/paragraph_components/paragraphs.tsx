@@ -11,7 +11,7 @@ import {
   EuiContextMenuPanelDescriptor,
   EuiFlexGroup,
   EuiFlexItem,
-  EuiFormRow,
+  EuiCompressedFormRow,
   EuiHorizontalRule,
   EuiIcon,
   EuiLink,
@@ -521,7 +521,7 @@ export const Paragraphs = forwardRef((props: ParagraphProps, ref) => {
           {para.isInputExpanded && (
             <>
               <EuiSpacer size="s" />
-              <EuiFormRow
+              <EuiCompressedFormRow
                 fullWidth={true}
                 helpText={paragraphLabel}
                 isInvalid={showQueryParagraphError}
@@ -543,7 +543,7 @@ export const Paragraphs = forwardRef((props: ParagraphProps, ref) => {
                   setSelectedVisOption={setSelectedVisOption}
                   setVisType={setVisType}
                 />
-              </EuiFormRow>
+              </EuiCompressedFormRow>
               {runParaError && (
                 <EuiText color="danger" size="s" data-test-subj="paragraphInputErrorText">{`${
                   para.isVizualisation ? 'Visualization' : 'Input'
