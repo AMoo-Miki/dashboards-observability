@@ -7,7 +7,7 @@ import {
   EuiCallOut,
   EuiCheckableCard,
   EuiComboBox,
-  EuiFieldText,
+  EuiCompressedFieldText,
   EuiForm,
   EuiCompressedFormRow,
   EuiSelect,
@@ -175,7 +175,7 @@ export function IntegrationDetailsInputs({
       error={['Must be at least 1 character.']}
       isInvalid={config.displayName.length === 0}
     >
-      <EuiFieldText
+      <EuiCompressedFieldText
         value={config.displayName}
         onChange={(event) => updateConfig({ displayName: event.target.value })}
         placeholder={`${integration.name} Integration`}
@@ -299,7 +299,7 @@ export function IntegrationQueryInputs({
             error={['Must be at least 1 character.']}
             isInvalid={config.connectionTableName.length === 0}
           >
-            <EuiFieldText
+            <EuiCompressedFieldText
               placeholder={integration.name}
               value={config.connectionTableName}
               onChange={(evt) => {
@@ -313,7 +313,7 @@ export function IntegrationQueryInputs({
             isInvalid={isBucketBlurred && !config.connectionLocation.startsWith('s3://')}
             error={["Must be a URL starting with 's3://'."]}
           >
-            <EuiFieldText
+            <EuiCompressedFieldText
               value={config.connectionLocation}
               onChange={(event) => updateConfig({ connectionLocation: event.target.value })}
               placeholder="s3://"
@@ -336,7 +336,7 @@ export function IntegrationQueryInputs({
         isInvalid={isCheckpointBlurred && !config.checkpointLocation.startsWith('s3://')}
         error={["Must be a URL starting with 's3://'."]}
       >
-        <EuiFieldText
+        <EuiCompressedFieldText
           value={config.checkpointLocation}
           onChange={(event) => updateConfig({ checkpointLocation: event.target.value })}
           placeholder="s3://"

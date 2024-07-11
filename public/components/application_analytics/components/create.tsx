@@ -6,7 +6,7 @@
 
 import {
   EuiSmallButton,
-  EuiFieldText,
+  EuiCompressedFieldText,
   EuiFlexGroup,
   EuiFlexItem,
   EuiForm,
@@ -201,14 +201,14 @@ export const CreateApp = (props: CreateAppProps) => {
             <EuiHorizontalRule />
             <EuiForm component="form">
               <EuiCompressedFormRow label="Name" data-test-subj="nameFormRow">
-                <EuiFieldText
+                <EuiCompressedFieldText
                   name="name"
                   value={name}
                   onChange={(e) => setNameWithStorage(e.target.value)}
                 />
               </EuiCompressedFormRow>
               <EuiCompressedFormRow label="Description" data-test-subj="descriptionFormRow">
-                <EuiFieldText
+                <EuiCompressedFieldText
                   name="description"
                   value={description}
                   onChange={(e) => setDescriptionWithStorage(e.target.value)}

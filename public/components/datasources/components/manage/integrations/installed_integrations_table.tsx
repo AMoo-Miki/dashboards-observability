@@ -12,7 +12,7 @@ import {
   EuiLink,
   EuiFlexGroup,
   EuiFlexItem,
-  EuiFieldSearch,
+  EuiCompressedFieldSearch,
   EuiSmallButton,
   EuiIcon,
   EuiText,
@@ -234,7 +234,7 @@ export const InstalledIntegrationsTable = ({
       <EuiSpacer />
       <EuiFlexGroup>
         <EuiFlexItem>
-          <EuiFieldSearch
+          <EuiCompressedFieldSearch
             fullWidth
             placeholder="Search..."
             onChange={(queryEvent) => {

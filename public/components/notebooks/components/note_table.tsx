@@ -7,7 +7,7 @@ import {
   EuiSmallButton,
   EuiContextMenuItem,
   EuiContextMenuPanel,
-  EuiFieldSearch,
+  EuiCompressedFieldSearch,
   EuiFlexGroup,
   EuiFlexItem,
   EuiHorizontalRule,
@@ -343,7 +343,7 @@ export function NoteTable({
             <EuiHorizontalRule margin="m" />
             {notebooks.length > 0 ? (
               <>
-                <EuiFieldSearch
+                <EuiCompressedFieldSearch
                   fullWidth
                   placeholder="Search notebook name"
                   value={searchQuery}
