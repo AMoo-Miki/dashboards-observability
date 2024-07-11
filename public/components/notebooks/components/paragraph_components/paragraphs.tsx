@@ -5,7 +5,7 @@
 
 import {
   EuiSmallButton,
-  EuiButtonIcon,
+  EuiSmallButtonIcon,
   EuiComboBoxOptionOption,
   EuiContextMenu,
   EuiContextMenuPanelDescriptor,
@@ -390,7 +390,7 @@ export const Paragraphs = forwardRef((props: ParagraphProps, ref) => {
           <EuiFlexItem>
             <EuiText style={{ fontSize: 17 }}>
               {`[${idx + 1}] ${type} `}
-              <EuiButtonIcon
+              <EuiSmallButtonIcon
                 data-test-subj="paragraphToggleInputBtn"
                 aria-label="Toggle show input"
                 iconType={para.isInputExpanded ? 'arrowUp' : 'arrowDown'}
@@ -406,7 +406,7 @@ export const Paragraphs = forwardRef((props: ParagraphProps, ref) => {
             <EuiPopover
               panelPaddingSize="none"
               button={
-                <EuiButtonIcon
+                <EuiSmallButtonIcon
                   aria-label="Open paragraph menu"
                   iconType="boxesHorizontal"
                   onClick={() => setIsPopoverOpen(true)}
