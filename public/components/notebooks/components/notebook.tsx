@@ -4,7 +4,7 @@
  */
 
 import {
-  EuiButton,
+  EuiSmallButton,
   EuiButtonGroup,
   EuiButtonGroupOptionProps,
   EuiCard,
@@ -892,7 +892,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
         <EuiPopover
           panelPaddingSize="none"
           button={
-            <EuiButton
+            <EuiSmallButton
               id="reportingActionsButton"
               iconType="arrowDown"
               iconSide="right"
@@ -903,7 +903,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
               }
             >
               Reporting actions
-            </EuiButton>
+            </EuiSmallButton>
           }
           isOpen={this.state.isReportingActionsPopoverOpen}
           closePopover={() => this.setState({ isReportingActionsPopoverOpen: false })}
@@ -942,7 +942,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                 <EuiPopover
                   panelPaddingSize="none"
                   button={
-                    <EuiButton
+                    <EuiSmallButton
                       data-test-subj="notebook-paragraph-actions-button"
                       iconType="arrowDown"
                       iconSide="right"
@@ -953,7 +953,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                       }
                     >
                       Paragraph actions
-                    </EuiButton>
+                    </EuiSmallButton>
                   }
                   isOpen={this.state.isParaActionsPopoverOpen}
                   closePopover={() => this.setState({ isParaActionsPopoverOpen: false })}
@@ -966,7 +966,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                 <EuiPopover
                   panelPaddingSize="none"
                   button={
-                    <EuiButton
+                    <EuiSmallButton
                       data-test-subj="notebook-notebook-actions-button"
                       iconType="arrowDown"
                       iconSide="right"
@@ -977,7 +977,7 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                       }
                     >
                       Notebook actions
-                    </EuiButton>
+                    </EuiSmallButton>
                   }
                   isOpen={this.state.isNoteActionsPopoverOpen}
                   closePopover={() => this.setState({ isNoteActionsPopoverOpen: false })}
@@ -1038,14 +1038,14 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                     <EuiPopover
                       panelPaddingSize="none"
                       button={
-                        <EuiButton
+                        <EuiSmallButton
                           data-test-subj="AddParagraphButton"
                           iconType="arrowDown"
                           iconSide="right"
                           onClick={() => this.setState({ isAddParaPopoverOpen: true })}
                         >
                           Add paragraph
-                        </EuiButton>
+                        </EuiSmallButton>
                       }
                       isOpen={this.state.isAddParaPopoverOpen}
                       closePopover={() => this.setState({ isAddParaPopoverOpen: false })}
@@ -1076,13 +1076,13 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                         title="Code block"
                         description="Write contents directly using markdown, SQL or PPL."
                         footer={
-                          <EuiButton
+                          <EuiSmallButton
                             data-test-subj="emptyNotebookAddCodeBlockBtn"
                             onClick={() => this.addPara(0, '', 'CODE')}
                             style={{ marginBottom: 17 }}
                           >
                             Add code block
-                          </EuiButton>
+                          </EuiSmallButton>
                         }
                       />
                     </EuiFlexItem>
@@ -1092,12 +1092,12 @@ export class Notebook extends Component<NotebookProps, NotebookState> {
                         title="Visualization"
                         description="Import OpenSearch Dashboards or Observability visualizations to the notes."
                         footer={
-                          <EuiButton
+                          <EuiSmallButton
                             onClick={() => this.addPara(0, '', 'VISUALIZATION')}
                             style={{ marginBottom: 17 }}
                           >
                             Add visualization
-                          </EuiButton>
+                          </EuiSmallButton>
                         }
                       />
                     </EuiFlexItem>

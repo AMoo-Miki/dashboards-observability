@@ -7,7 +7,7 @@
 import '../app_analytics.scss';
 import {
   EuiBadge,
-  EuiButton,
+  EuiSmallButton,
   EuiContextMenuItem,
   EuiContextMenuPanel,
   EuiFlexGroup,
@@ -144,14 +144,14 @@ export function AppTable(props: AppTableProps) {
   };
 
   const popoverButton = (
-    <EuiButton
+    <EuiSmallButton
       data-test-subj="appAnalyticsActionsButton"
       iconType="arrowDown"
       iconSide="right"
       onClick={() => setIsActionsPopoverOpen(!isActionsPopoverOpen)}
     >
       Actions
-    </EuiButton>
+    </EuiSmallButton>
   );
 
   const popoverItems: ReactElement[] = [
@@ -286,9 +286,9 @@ export function AppTable(props: AppTableProps) {
                     </EuiPopover>
                   </EuiFlexItem>
                   <EuiFlexItem>
-                    <EuiButton fill href="#/create">
+                    <EuiSmallButton fill href="#/create">
                       {createButtonText}
-                    </EuiButton>
+                    </EuiSmallButton>
                   </EuiFlexItem>
                 </EuiFlexGroup>
               </EuiPageContentHeaderSection>
@@ -326,12 +326,12 @@ export function AppTable(props: AppTableProps) {
                 <EuiSpacer size="m" />
                 <EuiFlexGroup justifyContent="center">
                   <EuiFlexItem grow={false}>
-                    <EuiButton fullWidth={false} href={`#/create`}>
+                    <EuiSmallButton fullWidth={false} href={`#/create`}>
                       {createButtonText}
-                    </EuiButton>
+                    </EuiSmallButton>
                   </EuiFlexItem>
                   {/* <EuiFlexItem grow={false}>
-                    <EuiButton fullWidth={false}>Add sample applications</EuiButton>
+                    <EuiSmallButton fullWidth={false}>Add sample applications</EuiSmallButton>
                   </EuiFlexItem> */}
                 </EuiFlexGroup>
                 <EuiSpacer size="xxl" />

@@ -6,7 +6,7 @@
 
 import {
   EuiBadge,
-  EuiButton,
+  EuiSmallButton,
   EuiContextMenu,
   EuiContextMenuPanelDescriptor,
   EuiFlexGroup,
@@ -148,14 +148,14 @@ export function ServiceView(props: ServiceViewProps) {
   }, [props.startTime, props.endTime, props.serviceName, props.mode]);
 
   const actionsButton = (
-    <EuiButton
+    <EuiSmallButton
       data-test-subj="ActionContextMenu"
       iconType="arrowDown"
       iconSide="right"
       onClick={() => setActionsMenuPopover(true)}
     >
       Actions
-    </EuiButton>
+    </EuiSmallButton>
   );
 
   const actionsMenu: EuiContextMenuPanelDescriptor[] = [

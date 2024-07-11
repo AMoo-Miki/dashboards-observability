@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import {
-  EuiButton,
+  EuiSmallButton,
   EuiFilePicker,
   EuiFlexGroup,
   EuiFlexItem,
@@ -148,10 +148,10 @@ export const IntegrationUploadFlyout = ({ onClose }: { onClose: () => void }) =>
       <EuiFlyoutFooter>
         <EuiFlexGroup justifyContent="spaceBetween">
           <EuiFlexItem grow={false}>
-            <EuiButton onClick={onClose}>Cancel</EuiButton>
+            <EuiSmallButton onClick={onClose}>Cancel</EuiSmallButton>
           </EuiFlexItem>
           <EuiFlexItem grow={false}>
-            <EuiButton
+            <EuiSmallButton
               fill
               disabled={isInvalid}
               onClick={async () => {
@@ -165,7 +165,7 @@ export const IntegrationUploadFlyout = ({ onClose }: { onClose: () => void }) =>
               }}
             >
               Upload
-            </EuiButton>
+            </EuiSmallButton>
           </EuiFlexItem>
         </EuiFlexGroup>
       </EuiFlyoutFooter>
