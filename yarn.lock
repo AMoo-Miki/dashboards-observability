@@ -2520,9 +2520,9 @@ pify@^2.2.0:
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
 plotly.js-dist@^2.29.1:
-  version "2.29.1"
-  resolved "https://registry.yarnpkg.com/plotly.js-dist/-/plotly.js-dist-2.29.1.tgz#8e67dcc3050e732f44cb8a23e063a4e5bcbfe892"
-  integrity sha512-jEdUhk9brzzleuJP1vTxk1ECfm896bld78elG6YRPdywyUYAAO0rd+JUNv56hZu4uqUftvKU6xfjSwjm0R3LUw==
+  version "2.35.2"
+  resolved "https://registry.yarnpkg.com/plotly.js-dist/-/plotly.js-dist-2.35.2.tgz#2bda4b53e6cfe264daac25e2e6adaf1aa69d4aa6"
+  integrity sha512-zbKfz7jXGcLGoyPJxjGrKLttPiqvsEjIMHON/dEU/mnOJ+/yYoEctEEQ3qp5zQmvoovw1L47kCsQpq/GTbejBA==
 
 popper.js@^1.14.4, popper.js@^1.16.1:
   version "1.16.1"
